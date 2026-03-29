@@ -25,6 +25,7 @@
                     <th scope="col">Cancelled</th>
                 </tr>
             </thead>
+
             <tbody>
                 @foreach ($trains as $train)
                     <tr
@@ -39,8 +40,6 @@
                         <td>{{ $train->isCancelled() }}</td>
                     </tr>
                 @endforeach
-
-
             </tbody>
         </table>
     </div>
